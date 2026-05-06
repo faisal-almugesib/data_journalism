@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  --color-paper: #f5f0e8;
+  --color-paper-2: #ebe5d9;
+  --color-ink: #1c1c1c;
+  --color-ink-2: #3a3a3a;
+  --color-muted: #6e6a64;
+  --color-line: #d4cdc0;
+  --color-line-2: #c0b9aa;
+
+  --color-ksa: #1a5e36;
+  --color-ksa-light: #4cdf90;
+  --color-ksa-mid: #2a7a4e;
+  --color-gold: #d4a73c;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--font-serif);
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  overflow: hidden; clip: rect(0,0,0,0);
+}
+
+@keyframes spin {
+  from { transform: rotate(0); }
+  to { transform: rotate(360deg); }
+}
+.animate-globe-spin { animation: spin 38s linear infinite; }
+
+.fc-flag .lvl::after {
+  content: ''; position: absolute; left: 0; right: 0; top: -2px; height: 1px;
+  background: rgba(255,255,255,0.45);
+}
