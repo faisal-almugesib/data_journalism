@@ -1,0 +1,39 @@
+:root {
+  /* Fonts */
+  --font-serif: 'Fraunces', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+
+  /* Paper tones */
+  --color-paper: #f5f0e8;
+  --color-paper-2: #ebe5d9;
+  --color-paper-3: #e1d9c5;
+
+  /* Ink */
+  --color-ink: #1c1c1c;
+  --color-ink-2: #3a3a3a;
+  --color-muted: #6e6a64;
+
+  /* Lines / borders */
+  --color-line: #d4cdc0;
+  --color-line-2: #c0b9aa;
+
+  /* KSA primary palette */
+  --color-ksa: #1a5e36;
+  --color-ksa-deep: #0e4a28;
+  --color-ksa-light: #4cdf90;
+  --color-ksa-mid: #2a7a4e;
+  --color-ksa-pale: #c9e6d4;
+
+  /* Vision 2030 / accent */
+  --color-gold: #d4a73c;
+  --color-gold-deep: #8a6818;
+  --color-gold-pale: #f0d8a0;
+
+  /* Visitors / annual flow */
+  --color-visitor: #b85c1a;
+  --color-visitor-pale: #f0c9a8;
+
+  /* Layout */
+  --max-page: 920px;
+  --max-prose: 680px;
+}
