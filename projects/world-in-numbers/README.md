@@ -2,6 +2,20 @@
 
 A multi-phase data journalism project visualizing world demographics with a focus on the Arab world and Saudi Arabia. Newspaper-editorial design language with creative pictogram charts.
 
+**🔗 Live demo: [faisal-almugesib.github.io/data_journalism](https://faisal-almugesib.github.io/data_journalism/)**
+
+## Preview
+
+| Hero | Closing — 2050 outlook |
+|---|---|
+| ![Hero section](docs/screenshots/hero.png) | ![2050 projections](docs/screenshots/pyramid.png) |
+
+![Globe section](docs/screenshots/globe.png)
+
+## Data Sources
+
+Figures are compiled from public datasets: UN World Population Prospects 2024, World Bank Open Data, GASTAT (Saudi Arabia), and the UN-Habitat World Cities Report 2022. Sources are also cited in the article footer.
+
 ## Stack
 
 - **React 18 + Vite + TypeScript** — fast dev, type-safe
