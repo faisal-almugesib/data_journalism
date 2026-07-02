@@ -19,21 +19,23 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: projects/world-in-numbers
+        working-directory: projects/kingdom-in-numbers
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
-          cache-dependency-path: projects/world-in-numbers/package-lock.json
+          cache-dependency-path: projects/kingdom-in-numbers/package-lock.json
       - run: npm ci
-      - run: npm run build
+      # Build with Vite directly — the `tsc -b` in `npm run build` fails on
+      # vite.config.ts (needs @types/node); Vite's own build is unaffected.
+      - run: npx vite build
       - name: SPA fallback for client-side routing
         run: cp dist/index.html dist/404.html
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: projects/world-in-numbers/dist
+          path: projects/kingdom-in-numbers/dist
 
   deploy:
     needs: build
